@@ -1,0 +1,55 @@
+import java.util.*;
+
+public class Eigth {
+   public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+
+  int x=0, number1, number2;
+
+  System.out.print("Enter first number: ");
+  number1=s.nextInt();
+
+  if(number1 == x) {
+     System.out.println("Error");  
+     System.exit(0);  
+  } 
+
+  System.out.print("Enter second number: ");
+  number2=s.nextInt();
+
+  if (number2 == x) {
+     System.out.println("Error");
+     System.exit(0);
+  }
+
+  if(number2 <= number1) {
+        System.out.println("Error");
+        System.exit(0);    
+  }
+
+ while (number1 <= number2) {
+     if ((number1 % 2) == 0)
+        System.out.println("\"" + number1 + " IS EVEN\"");
+     else
+        System.out.println("\"" + number1 + " IS ODD\"");
+        number1++;  
+  }    
+
+ int evenSum = 0, oddSum = 0, i = number1;
+ while(i <= number2) {
+     if(i % 2 == 0) {
+     evenSum += i;
+  } 
+     else {
+     oddSum += i;
+  }
+     i++;
+}
+
+
+System.out.println("Sum of Even Numbers in Loop: " + evenSum);
+System.out.println("Sum of Odd Numbers in Loop: " + oddSum);
+System.out.println("Sum of All Numbers in Loop: " + evenSum + oddSum);
+
+}
+}
