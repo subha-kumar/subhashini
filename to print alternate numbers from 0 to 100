@@ -1,0 +1,35 @@
+import java.io.*;
+ 
+class GFG{
+ 
+// Function to print
+// Alternate elements
+// of the given array
+static void printAlter(int[] arr, int N)
+{
+     
+    // Print elements
+    // at odd positions
+    for(int currIndex = 0;
+            currIndex < N;
+            currIndex++)
+    {
+         
+        // If currIndex stores even index
+        // or odd position
+        if (currIndex % 2 == 0)
+        {
+            System.out.print(arr[currIndex] + " ");
+        }
+    }
+}
+ 
+// Driver Code
+public static void main(String[] args)
+{
+    int[] arr = { 1, 2, 3, 4, 5 };
+    int N = arr.length;
+     
+    printAlter(arr, N);
+}
+}
